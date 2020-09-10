@@ -1,0 +1,108 @@
+.navbar {
+    box-sizing: border-box;
+    width: 100%;
+    height: 115px;
+
+    position: sticky;
+    top: 0;
+
+    padding: 30px 0;
+    background: #0078ab;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__elements-list {
+        width: calc(100vw - 260px);
+        max-width: 1024px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__element {
+        border: 1px solid white;
+        border-radius: 5px;
+        background-color: #6DD8FF;
+    }
+
+    &__anchor {
+        display: block;
+        padding: 25px;
+        font-family: $font-family-main;
+        font-size: $font-size-normal;
+        opacity: 55%;
+        text-align: center;
+        text-decoration: none;
+        color: black;
+    }
+}
+
+// Large
+@media (min-width: 992px) and (max-width: 1200px) {
+    .navbar {
+        height: 95px;
+        padding: 20px 0;
+
+        &__anchor {
+            padding: 15px;
+            font-size: $font-size-medium;
+        }
+    }
+}
+
+
+// Medium
+@media (min-width: 768px) and (max-width: 992px) {
+    .navbar {
+        height: 75px;
+        padding: 10px 0;
+
+        &__anchor {
+            padding: 10px;
+            font-size: 18px;
+        }
+    }
+}
+
+// Small
+@media (min-width: 576px) and (max-width: 768px) {
+    .navbar {
+        height: 75px;
+        padding: 10px 0;
+    
+        &__elements-list {
+            width: 100vw;
+            justify-content: space-around;
+        }
+
+        &__anchor {
+            padding: 10px;
+            font-size: 18px;
+        }
+    }
+}
+
+// Extra small
+@media (max-width: 576px) {
+    .navbar {
+        height: 286px;
+        padding: 0;
+
+        &__elements-list {
+            width: 99%;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        &__element {
+            width: 100%;
+        }
+
+        &__anchor {
+            font-size: $font-size-medium;
+        }
+    }
+}
