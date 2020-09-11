@@ -91,6 +91,8 @@
         height: 286px;
         padding: 0;
 
+        position: static;
+
         &__elements-list {
             width: 99%;
             flex-direction: column;
