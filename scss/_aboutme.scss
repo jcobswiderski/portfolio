@@ -1,0 +1,219 @@
+.aboutme {
+    box-sizing: border-box;
+    max-width: 940px;
+    
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas: 
+        "main-title main-title photo"
+        "content content content"
+        "sub-title sub-title sub-title"
+        "cards cards cards"
+    ;
+
+    &__title {
+        grid-area: main-title;
+        justify-self: start;
+        align-self: end;
+
+        font-family: $font-family-main;
+        font-size: $font-size-titles;
+        opacity: 0.52;
+
+        padding-bottom: 30px;
+
+        &--sub {
+            grid-area: sub-title;
+            padding-top: 100px;
+        }
+    }
+
+    &__picture-frame {
+        position: relative;
+        top: 180px;
+        
+        grid-area: photo;
+        justify-self: end;
+        align-self: end;
+    }
+
+    &__picture {
+        width: 349px;
+        height: auto;
+    }
+
+    &__content {
+        font-family: $font-family-default;
+        border: 1px solid black;
+        background-color: #007AAD;
+        grid-area: content;
+        z-index: 2;
+        box-shadow: 0px 4px 15px 0px rgba(0,0,0,0.77);
+    }
+
+    &__text {
+        padding: 40px;
+
+        font-size: 19px;
+        letter-spacing: 1.5px;
+        text-align: justify;
+        color: white;
+        opacity: 0.77;
+    }
+
+    &__cards-collection {
+        grid-area: cards;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__card {
+        box-sizing: border-box;
+        padding: 30px;
+        
+        box-shadow: 1px 1px 15px 0px rgba(0,0,0,0.77);
+        
+        width: 276px;
+        height: 435px;
+
+        background-color: #007AAD;
+        border: 1px solid black;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+
+        font-family: $font-family-default;
+        letter-spacing: 1.5px;
+    }
+
+    &__icon {
+        width: 71px;
+        height: 71px;
+    }
+
+    &__interests-title {
+        font-size: 24px;
+        color: white;
+        opacity: .86;
+    }
+
+    &__interests-content {
+        font-size: 18px;
+        color: white;
+        text-align: center;
+        opacity: .76;
+        padding: 30px 10px 10px 10px;
+    }
+}
+
+// Medium
+@media (min-width: 768px) and (max-width: 992px) {
+    .aboutme {
+        &__title {
+            justify-self: center;
+        }
+
+        &__content {
+            width: calc(100% - 60px);
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        &__picture-frame {
+            right: 30px;
+        }
+
+        &__cards-collection {
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        &__card {
+            width: calc(100% - 60px);
+            margin: 30px;
+            height: auto;
+        }
+    }
+}
+
+// Small
+@media (min-width: 576px) and (max-width: 768px) {
+    .aboutme {
+        &__title {
+            justify-self: center;
+            font-size: 36px;
+        }
+
+        &__content {
+            width: calc(100% - 60px);
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        &__picture-frame {
+            right: 30px;
+        }
+
+        &__cards-collection {
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        &__card {
+            width: calc(100% - 60px);
+            margin: 30px;
+            height: auto;
+        }
+    }
+}
+
+// Extra small
+@media (max-width: 576px) {
+    .aboutme {
+        &__title {
+            justify-self: center;
+            align-self: end;
+
+            font-size: 28px;
+        }
+
+        &__content {
+            width: calc(100% - 30px);
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        &__picture-frame {
+            position: relative;
+            top: 120px;
+            right: 15px;
+        }
+
+        &__picture {
+            width: 232px;
+            height: auto;
+        }
+
+        &__cards-collection {
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        &__card {
+            width: calc(100% - 30px);
+            margin: 15px;
+            height: auto;
+        }
+    }
+}
