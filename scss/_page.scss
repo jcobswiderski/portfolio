@@ -1,23 +1,22 @@
 .page {
-    height: 5000px;
     box-sizing: border-box;
 
     &__header {
-        height: calc(100vh - 115px);
+        height: calc(100vh - 90px);
     }
 }
 
 // Large
 @media (min-width: 992px) and (max-width: 1200px) {
     .page__header {
-        height: calc(100vh - 95px);
+        height: calc(100vh - 75px);
     }
 }
 
 // Medium
 @media (min-width: 768px) and (max-width: 992px) {
     .page__header {
-        height: calc(100vh - 75px);
+        height: calc(100vh - 65px);
     }
 }
 

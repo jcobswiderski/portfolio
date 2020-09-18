@@ -1,6 +1,7 @@
 .aboutme {
     box-sizing: border-box;
     max-width: 940px;
+    width: 100%;
     
     margin-left: auto;
     margin-right: auto;
@@ -50,11 +51,11 @@
 
     &__content {
         font-family: $font-family-default;
-        border: 1px solid black;
+        
         background-color: #007AAD;
         grid-area: content;
         z-index: 2;
-        box-shadow: 0px 4px 15px 0px rgba(0,0,0,0.77);
+        box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.77);
     }
 
     &__text {
@@ -80,13 +81,12 @@
         box-sizing: border-box;
         padding: 30px;
         
-        box-shadow: 1px 1px 15px 0px rgba(0,0,0,0.77);
+        box-shadow: 1px 1px 10px 0px rgba(0,0,0,0.77);
         
         width: 276px;
         height: 435px;
 
         background-color: #007AAD;
-        border: 1px solid black;
 
         display: flex;
         flex-direction: column;
