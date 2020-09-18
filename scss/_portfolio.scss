@@ -1,0 +1,61 @@
+.portfolio {
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 1020px;
+    background-color: #E2F6FF;
+    margin: 150px auto 150px auto;
+
+    &__title {
+        font-family: $font-family-main;
+        font-size: 48px;
+        opacity: 52%;
+        padding: 150px 25px 100px;
+        text-align: center;
+    }
+
+    &__projects {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+        max-width: 940px;
+        margin-left: auto;
+        margin-right: auto;
+
+        &:last-child {
+            padding-bottom: 100px;
+        }
+    }
+
+    &__item {
+        width: 400px;
+        height: 465px;
+        border-radius: 5px;
+
+        margin: 30px;
+
+        background-color: #29a9df;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;    
+    }
+
+    &__outlook {
+        object-fit: cover;
+        width: 390px;
+        height: 400px;
+    }
+
+    &__item-name {
+        padding: 15px;
+        color: black;
+        opacity: .76;
+
+        font-size: 24px;
+        font-family: $font-family-default;
+    }
+}
