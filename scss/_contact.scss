@@ -1,0 +1,74 @@
+.contact {
+    width: 100%;
+    background-color: #29A9DF;
+    margin-top: 150px;
+
+    @mixin flex-column {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    @include flex-column;
+
+    &__title {
+        font-size: $font-size-extra-large;
+        font-family: $font-family-main;
+        opacity: .59;
+        padding: 50px;
+    }
+
+    &__form {
+        @include flex-column;
+        width: 600px;
+    }
+
+    &__label {
+        align-self: flex-start;
+        font-size: $font-size-medium;
+        font-family: $font-family-default;
+        opacity: .59;
+        padding-bottom: 7px;
+    }
+
+    &__email {
+        box-sizing: border-box;
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 10px;
+        border: 0;
+    }
+
+    &__message {
+        box-sizing: border-box;
+        width: 600px;
+        height: 160px;
+        padding: 10px;
+        margin-bottom: 30px;
+        border: 0;
+    }
+
+    &__submit {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 100px;
+        background-color: #6DD8FF;
+        border: 0;
+        font-size: $font-size-medium;
+        font-family: $font-family-default;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact {
+        &__form {
+            width: 80vw;
+        }
+
+        &__message {
+            width: 80vw;
+        }
+    }
+}
