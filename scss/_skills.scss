@@ -14,7 +14,7 @@
     @include flex-column;
 
     &__title {
-        font-size: $font-size-titles;
+        font-size: $font-size-extra-large;
         font-family: $font-family-main;
         opacity: .52;
     }
@@ -100,6 +100,16 @@
     .skills {
         &__card {
             margin: 30px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .skills {
+        &__title {
+            font-size: $font-size-large;
+            font-family: $font-family-main;
+            opacity: .52;
         }
     }
 }

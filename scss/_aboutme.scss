@@ -24,7 +24,7 @@
         align-self: end;
 
         font-family: $font-family-main;
-        font-size: $font-size-titles;
+        font-size: $font-size-extra-large;
         opacity: 0.52;
 
         padding-bottom: 30px;
@@ -61,7 +61,7 @@
     &__text {
         padding: 40px;
 
-        font-size: 19px;
+        font-size: $font-size-medium;
         letter-spacing: 1.5px;
         text-align: justify;
         color: white;
@@ -103,13 +103,13 @@
     }
 
     &__interests-title {
-        font-size: 24px;
+        font-size: $font-size-medium;
         color: white;
         opacity: .86;
     }
 
     &__interests-content {
-        font-size: 18px;
+        font-size: $font-size-small;
         color: white;
         text-align: center;
         opacity: .76;
@@ -152,7 +152,7 @@
     .aboutme {
         &__title {
             justify-self: center;
-            font-size: 36px;
+            font-size: $font-size-large;
         }
 
         &__content {
@@ -185,7 +185,7 @@
             justify-self: center;
             align-self: end;
 
-            font-size: 28px;
+            font-size: $font-size-medium;
         }
 
         &__content {

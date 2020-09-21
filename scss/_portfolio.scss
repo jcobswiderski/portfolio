@@ -7,7 +7,7 @@
 
     &__title {
         font-family: $font-family-main;
-        font-size: 48px;
+        font-size: $font-size-extra-large;
         opacity: 52%;
         padding: 150px 25px 100px;
         text-align: center;
@@ -57,7 +57,7 @@
         color: black;
         opacity: .76;
 
-        font-size: 24px;
+        font-size: $font-size-medium;
         font-family: $font-family-default;
     }
 }
@@ -77,9 +77,13 @@
 
 @media (max-width: 576px) {
     .portfolio {
+        &__title {
+            font-size: $font-size-large;
+        }
+
         &__item {
-            transform: scale(.9);
-            margin: 50px 0;
+            transform: scale(.7);
+            margin: 25px 0;
         }
     }
 }

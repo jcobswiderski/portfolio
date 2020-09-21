@@ -40,7 +40,7 @@
         display: block;
         padding: 15px;
         font-family: $font-family-main;
-        font-size: $font-size-normal;
+        font-size: $font-size-medium;
         opacity: 55%;
         text-align: center;
         text-decoration: none;
@@ -98,7 +98,7 @@
 
         &__anchor {
             padding: 10px;
-            font-size: $font-size-medium;
+            font-size: $font-size-small;
         }
     }
 }
@@ -115,6 +115,7 @@
             width: 100%;
             flex-direction: column;
             justify-content: center;
+            margin: 0;
         }
 
         &__element {
@@ -123,6 +124,7 @@
 
         &__anchor {
             font-size: $font-size-medium;
+            // width: 100%;
         }
     }
 }
