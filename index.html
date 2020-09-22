@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/styles.min.css">
 </head>
 <body class="page">
-    <header class="header page__header">
+    <header class="header page__header" id="header">
         <span class="header__icon">
             <img src="img/header-icon.png" alt="Programmer icon">
         </span>
@@ -63,7 +63,7 @@
         <h2 class="portfolio__title">Moje realizacje</h2>
         <div class="portfolio__projects">
             <div class="portfolio__item">
-                <img src="img/recipeapp.png" alt="" class="portfolio__outlook">
+                <a href="http://jakubswiderski.com/external-pages/projekt_recipeapp-master/"><img src="img/recipeapp.png" alt="" class="portfolio__outlook"></a>
                 <h3 class="portfolio__item-name">RecipeApp</h3>
             </div>
             <div class="portfolio__item">
@@ -102,6 +102,18 @@
             <textarea class="contact__message" id="contact__message"></textarea>
             <input type="submit" class="contact__submit" value="Wyślij">
         </form>
+    </section>
+    <section class="footer page__footer">
+        <div class="footer__container">
+            <ul class="footer__navigation">
+                <li class="footer__navigation-item"><a class="footer__link" href="#header">Start</a></li>
+                <li class="footer__navigation-item"><a class="footer__link" href="#aboutme">O mnie</a></li>
+                <li class="footer__navigation-item"><a class="footer__link" href="#portfolio">Projekty</a></li>
+                <li class="footer__navigation-item"><a class="footer__link" href="#skills">Umiejętności</a></li>
+                <li class="footer__navigation-item"><a class="footer__link" href="#contact">Kontakt</a></li>
+            </ul>
+            <span class="footer__info">Wszelkie prawa zastrzeżone. © 2020</span>
+        </div>
     </section>
 </body>
 </html>
