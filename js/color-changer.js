@@ -28,15 +28,15 @@ window.onload = function() {
     setInterval(
         () => {
                 firstBackgroundHandler.forEach((item) => {
-                    item.style.transition = "background-color 2s ease";
+                    item.style.transition = "background-color 2s ease, transform 1s ease-in-out";
                     item.style.backgroundColor = firstBackgroundGroup[indicator];
                 });
                 secondBackgroundHandler.forEach((item) => {
-                    item.style.transition = "background-color 2s ease";
+                    item.style.transition = "background-color 2s ease, transform 1s ease-in-out";
                     item.style.backgroundColor = secondBackgroundGroup[indicator];
                 });
                 thirdBackgroundHandler.forEach((item) => {
-                    item.style.transition = "background-color 2s ease";
+                    item.style.transition = "background-color 2s ease, transform 1s ease-in-out";
                     item.style.backgroundColor = thirdBackgroundGroup[indicator];
                 });
 
